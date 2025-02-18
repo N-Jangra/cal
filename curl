@@ -1,0 +1,36 @@
+curl to add data :
+curl -X POST "http://localhost:8080/n?Name=Cinco&iso_date=2004-05-05&international=true"
+here, you can replace name, iso_date and international of your choice.
+
+
+curl to fetch specific data :
+curl -X GET http://localhost:8080/g/2025-06-02
+here, you can replace date from your tabl.
+
+
+curl to fetch all data :
+curl -X GET http://localhost:8080/ga
+
+
+curl to update existing data :
+curl -X PUT   http://localhost:8080/u/24   -H "Content-Type: application/json"   -d '{
+        "name": "fefe",
+        "date": {
+          "ISO": "2125-06-02"
+        },
+        "international": true
+      }'
+here, you can change credentials according to you like what to set name , iso_date, international after updating.
+::note:: don't forget to change u/24 with your id of stored data.
+
+
+curl to delete data :
+curl -X DELETE -v http://localhost:8080/holidays/2004-05-05
+here, you can replace date which you want to delete.
+
+
+curl to delete all data :
+curl -X DELETE http://localhost:8080/da
+
+
+*or you can use POSTMAN to test your api*
