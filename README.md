@@ -187,3 +187,11 @@ Feel free to fork this repository and submit pull requests if you wish to contri
 - Replace the `apiKey` in the `main.go` file with your own valid key from the Calendarific API before running the program.
 - Ensure the `.env` file is correctly configured with your PostgreSQL database credentials.
 - The program defaults to fetching holidays for India (`IN`). You can specify a different country code as a command-line argument when running the program.
+
+## Contact 
+
+For any questions or suggestions, feel free to reach out:
+
+    Author: Nitin
+    Email: itznitinjangra@gmail.com
+    GitHub: N-Jangra
